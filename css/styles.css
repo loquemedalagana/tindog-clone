@@ -1,0 +1,222 @@
+/*
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pangolin', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+.body{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+/*
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+*/
+
+/*Headings*/
+.big-heading {   
+    font-size: 3.5rem;
+    color: #faf2f2;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 7% 15% ;
+}
+
+
+.feature-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.crop {
+    margin-bottom: 0px;
+}
+
+.white-section {
+    background-color: #fff8cd;
+}
+
+.colored-section{
+    background-color: #d291bc;
+    color: #fff8cd;
+}
+
+/*nav bar*/
+.navbar{
+    padding: 0 0 4.0rem; 
+}
+
+
+.navbar-brand{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4.5rem; 
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*button*/
+.btn {
+    font-family: 'Indie Flower', cursive;
+}
+
+.download_button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/*override*/
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+/*title-img*/
+.title-img {
+    width: 60%;
+    overflow: hidden;
+ /*   display: block;  */ /*이거 지우니 가운데 됨*/
+ /*   z-index: -1; */ 
+    position: absolute; /*이거 덕분에 flow-chart 기반 stack order 적용됨*/
+    right: 30%;
+    transform: rotate( 25deg );
+}
+
+/*feature*/
+
+#features {
+   /* top: 800px; */
+    
+ /*   z-index: 1; */
+    position: relative; /* flow chart 참고하기 absolute에서 바꿈*/
+}
+
+.feature-box {
+    padding: 5%;
+    text-align: center;
+}
+
+.icon{
+    color: #e9b2bc;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #d291bc;
+}
+
+.explain {
+    color: #888888;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Testimonials */
+#testimonials {    
+  /*  padding: 7% 15%; 패딩을 필요한 부분에 넣기 위해 삭제*/ 
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+   background-color: #e9b2bc; 
+    color: white;
+}
+/**/
+.carousel-item {
+ /*여기서 사용함. 위에꺼 옮김*/
+    height: 500px;  
+}
+
+.testimonial-text {
+    
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #e9b2bc; 
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-log {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/*Pricing*/
+
+#pricing {
+    padding: 100px;
+}
+
+.price-txt {
+    font-size: 3rem;
+    line-height: 1.5;  /*글자 수 띄우기 간격*/
+}
+
+.pricing-col {
+    padding: 3% 2%;
+    text-align: center;
+}
+
+/*media quary*/
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-img {
+        position: static; /*줄였을 때 변화*/
+        transform: rotate(0); /*absolute라서 원래로 함*/
+    }
+}
+
+#cta {
+    text-align: center;
+}
+
+
+#footer {
+    padding-bottom: 4%;
+    text-align: center;
+    font-size: 0.85rem;
+
+    line-height: 1.5;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
